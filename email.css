@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(234, 29%, 20%);
+    min-height: 100vh;
+    
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    padding: 15px 15px 15px 40px;
+    border-radius: 15px;
+    max-width: 676px;
+    gap: 30px;
+}
+
+.img-holder{
+    max-height: 410px;
+    flex-basis: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-holder img{
+    width: 100%;
+    height: 100%;
+}
+
+.form{flex-basis: 55%;
+padding-top: 34px;
+}
+
+.form h1{
+color: hsl(234, 29%, 20%);
+font-size: 38px;
+}
+
+.form p {
+    margin: 20px 0;
+    font-size: 15px;
+    color: hsl(234, 29%, 20%);
+}
+
+ul{
+    list-style: none;
+    
+}
+li{display: flex;
+align-items: center;
+margin-bottom: 10px;
+font-size: 15px;
+}
+
+li img{margin-right: 10px;}
+
+.form form{display: flex;
+flex-direction: column;
+margin-top: 20px;
+max-width: 300px;
+}
+
+label{font-size: 15px;
+color: hsl(234, 29%, 20%);
+font-weight: bold;
+margin-bottom: 7px;
+}
+
+[type = "text"]:focus{
+outline: none;
+}
+
+[type = "text"]::placeholder{
+    color: grey;
+}
+
+[type = "text"]{
+    padding: 12px 4px 12px 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 15px;
+}
+
+[type = "submit"]{
+    border-radius: 5px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+[type = "submit"]:hover{
+background: hsl(4, 100%, 67%);
+
+}
+
+
+@media (max-width:600px){
+.container{flex-direction: column-reverse;
+margin: 0;
+flex: 1;
+min-height: 100vh;
+border-radius: 0;
+
+padding: 0 0 50px 0;
+}
+
+.container .img-holder{
+flex-basis: 30%;
+flex: 1;
+padding: 0;
+max-height: none;
+gap: 0;
+display: block;
+}
+ .img-holder img{max-width: 100%;
+content: url(assets/images/illustration-sign-up-mobile.svg);
+
+}
+
+.form{flex-basis: 70%;
+padding: 0 15px;
+}
+
+form{margin: auto;}
+
+
+}
+
+span{color:black;
+font-size: bold;}
